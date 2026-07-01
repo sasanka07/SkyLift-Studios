@@ -4,13 +4,17 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
+  url      = "file:./dev.db"
 }
 
-model Contact {
+model Enquiry {
   id        Int      @id @default(autoincrement())
-  name      String
+  fullName  String
+  business  String
+  phone     String
   email     String
+  service   String
+  budget    String
   message   String
   createdAt DateTime @default(now())
 }

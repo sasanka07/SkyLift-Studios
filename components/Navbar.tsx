@@ -12,7 +12,7 @@ export default function Navbar() {
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7 }}
-      className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md border-b z-50"
+      className="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md border-amber-50 z-50"
     >
       <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
